@@ -1,0 +1,9 @@
+<div class="container mt-5">
+    <div class="row">
+        <textarea id="textarea" name="source" cols="150" rows="20" placeholder="Paste json format source data here and click Clean button to get clean data" [(ngModel)]="source"></textarea>
+    </div>
+    <div class="row my-2">
+        <button id="clean" class="btn btn-primary" (click)="onClean()">Clean</button>
+        <button id="reset" class="btn btn-danger ml-2" (click)="onReset()">Reset</button>
+    </div>
+</div>
