@@ -11,8 +11,9 @@ export class FeedService {
     private http: HttpClient
   ) { }
 
-	getFromApi(): Observable<any> {
-		return this.http.get('http://127.0.0.1:3000/api');
+	getFromApi(url): Observable<any> {
+    console.log(url);
+		return this.http.get(url);
   }
   
 	postToApi(data): Observable<any> {
